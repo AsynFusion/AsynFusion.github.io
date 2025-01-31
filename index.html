@@ -48,68 +48,30 @@
     .video-container {
       display: flex;
       flex-direction: column;
-      gap: 0;
-      margin: 0;
-      padding: 0;
-      width: 100%;
+      gap: 1px; /* 行间距 */
     }
     
     .video-row {
       display: flex;
       justify-content: center;
-      gap: 0;
-      margin: 0 !important;
-      padding: 0 !important;
-      width: 100%;
+      gap: 1px; /* 列间距 */
     }
     
     .publication-video {
-      width: 33.333%;
-      margin: 0 !important;
-      padding: 1px !important;
+      width: 30%; /* 每个视频占行宽的30% */
     }
     
     .publication-video video {
       width: 100%;
-      height: auto !important; /* 确保视频保持宽高比 */
-      max-width: 100%;
-      display: block;
-      margin: 0;
-      min-height: 200px; /* 设置最小高度 */
+      height: auto;
+      max-height: 250px; /* 控制视频高度 */
     }
     
     .video-caption {
-      margin: 1px 0;
+      margin-top: 10px;
       font-size: 0.9em;
       color: #666;
       text-align: center;
-    }
-    
-    /* 覆盖 Bulma 的默认样式 */
-    .hero.is-small .hero-body {
-      padding: 0.5rem !important;
-    }
-    
-    .container {
-      margin: 0 auto !important;
-      padding: 0 !important;
-      width: 100% !important;
-      max-width: none !important;
-    }
-    
-    .column {
-      padding: 0.25rem !important;
-      width: 100% !important;
-    }
-    
-    .columns {
-      margin: 0 !important;
-      width: 100% !important;
-    }
-    
-    .column.is-four-fifths {
-      width: 100% !important;
-      max-width: none !important;
     }
   </style>
 </head>
