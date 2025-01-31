@@ -45,16 +45,26 @@
   <script src="static/js/index.js"></script>
 
   <style>
-    .publication-video {
-      display: inline-block;
-      width: 30%;
-      margin: 0 10px;
-      vertical-align: top;
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px; 
     }
     
-    .publication-video iframe {
+    .video-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px; 
+    }
+    
+    .publication-video {
+      width: 30%; 
+    }
+    
+    .publication-video video {
       width: 100%;
-      height: 300px; 
+      height: auto;
+      max-height: 250px; 
     }
     
     .video-caption {
@@ -62,13 +72,6 @@
       font-size: 0.9em;
       color: #666;
       text-align: center;
-    }
-    
-    .video-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
     }
   </style>
 </head>
@@ -114,44 +117,7 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+
 
 
 
@@ -165,26 +131,79 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="video-container">
-            <div class="publication-video">
-              <video controls autoplay loop muted>
-                <source src="static/videos/carousel2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p class="video-caption">Original video</p>
+            <!-- 第一行 -->
+            <div class="video-row">
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Original video</p>
+              </div>
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 1</p>
+              </div>
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 2</p>
+              </div>
             </div>
-            <div class="publication-video">
-              <video controls autoplay loop muted>
-                <source src="static/videos/carousel2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p class="video-caption">Our result</p>
+            
+            <!-- 第二行 -->
+            <div class="video-row">
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 3</p>
+              </div>
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 4</p>
+              </div>
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 5</p>
+              </div>
             </div>
-            <div class="publication-video">
-              <video controls autoplay loop muted>
-                <source src="static/videos/carousel2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p class="video-caption">Our result</p>
+            
+            <!-- 第三行 -->
+            <div class="video-row">
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 6</p>
+              </div>
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 7</p>
+              </div>
+              <div class="publication-video">
+                <video controls autoplay loop muted>
+                  <source src="static/videos/carousel2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Result 8</p>
+              </div>
             </div>
           </div>
         </div>
@@ -193,42 +212,6 @@
   </div>
 </section>
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
 
 
 <!--BibTex citation -->
