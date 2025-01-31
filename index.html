@@ -44,34 +44,47 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
- <style>
+  <style>
     .video-container {
       display: flex;
       flex-direction: column;
-      gap: 30px; /* 行间距 */
+      gap: 0; /* 移除容器的间距 */
     }
     
     .video-row {
       display: flex;
       justify-content: center;
-      gap: 20px; /* 列间距 */
+      gap: 0; /* 移除行内元素的间距 */
+      margin: 0; /* 移除外边距 */
+      padding: 0; /* 移除内边距 */
     }
     
     .publication-video {
-      width: 30%; /* 每个视频占行宽的30% */
-    }
-    
-    .publication-video video {
-      width: 100%;
-      height: auto;
-      max-height: 250px; /* 控制视频高度 */
+      width: 30%;
+      margin: 0; 
+      padding: 2px; 
     }
     
     .video-caption {
-      margin-top: 10px;
+      margin-top: 2px;
+      margin-bottom: 2px;
       font-size: 0.9em;
       color: #666;
       text-align: center;
+    }
+    
+    /* 覆盖 Bulma 的默认样式 */
+    .hero.is-small .hero-body {
+      padding: 0.5rem;
+    }
+    
+    .container {
+      margin: 0 auto;
+      padding: 0; 
+    }
+    
+    .column {
+      padding: 0.25rem; 
     }
   </style>
 </head>
