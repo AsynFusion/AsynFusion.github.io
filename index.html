@@ -48,26 +48,38 @@
     .video-container {
       display: flex;
       flex-direction: column;
-      gap: 0; /* 移除容器的间距 */
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      width: 100%;
     }
     
     .video-row {
       display: flex;
       justify-content: center;
-      gap: 0; /* 移除行内元素的间距 */
-      margin: 0; /* 移除外边距 */
-      padding: 0; /* 移除内边距 */
+      gap: 0;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100%;
     }
     
     .publication-video {
-      width: 30%;
-      margin: 0; 
-      padding: 2px; 
+      width: 33.333%;
+      margin: 0 !important;
+      padding: 1px !important;
+    }
+    
+    .publication-video video {
+      width: 100%;
+      height: auto !important; /* 确保视频保持宽高比 */
+      max-width: 100%;
+      display: block;
+      margin: 0;
+      min-height: 200px; /* 设置最小高度 */
     }
     
     .video-caption {
-      margin-top: 2px;
-      margin-bottom: 2px;
+      margin: 1px 0;
       font-size: 0.9em;
       color: #666;
       text-align: center;
@@ -75,16 +87,29 @@
     
     /* 覆盖 Bulma 的默认样式 */
     .hero.is-small .hero-body {
-      padding: 0.5rem;
+      padding: 0.5rem !important;
     }
     
     .container {
-      margin: 0 auto;
-      padding: 0; 
+      margin: 0 auto !important;
+      padding: 0 !important;
+      width: 100% !important;
+      max-width: none !important;
     }
     
     .column {
-      padding: 0.25rem; 
+      padding: 0.25rem !important;
+      width: 100% !important;
+    }
+    
+    .columns {
+      margin: 0 !important;
+      width: 100% !important;
+    }
+    
+    .column.is-four-fifths {
+      width: 100% !important;
+      max-width: none !important;
     }
   </style>
 </head>
