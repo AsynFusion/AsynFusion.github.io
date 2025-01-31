@@ -44,34 +44,34 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
-  <style>
+ <style>
     .video-container {
       display: flex;
       flex-direction: column;
-      gap: 2px; 
+      gap: 30px; /* 行间距 */
     }
     
     .video-row {
       display: flex;
       justify-content: center;
-      gap: 2px; 
+      gap: 20px; /* 列间距 */
     }
     
     .publication-video {
-      width: 30%; 
+      width: 30%; /* 每个视频占行宽的30% */
+    }
+    
+    .publication-video video {
+      width: 100%;
+      height: auto;
+      max-height: 250px; /* 控制视频高度 */
     }
     
     .video-caption {
-      margin-top: 2px;
+      margin-top: 10px;
       font-size: 0.9em;
       color: #666;
       text-align: center;
-    }
-    .video-row {
-      margin-bottom: 2px;
-    }
-    .video-row:last-child {
-      margin-bottom: 0; 
     }
   </style>
 </head>
@@ -123,7 +123,6 @@
 
 
 <!-- Youtube video -->
-
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
